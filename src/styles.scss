@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  width: 70%;
+  margin: 30px auto 30px auto;
+}
+
+input {
+  border: 1px solid #ced4da;
+  width: calc(100% - 14px);
+  height: 44px;
+  padding-left: 10px;
+  box-shadow: 6px 5px 8px #aaaaaa;
+  margin-bottom: 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border: 1px solid #fff;
+  padding: 12px 60px;
+  text-align: center;
+}
+
+.btn-cancel {
+  background-color: #007bff;
+
+  &:hover, &:focus {
+    background-color: #fff;
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+}
+
+.btn-save {
+  background-color: #4CAF50;
+  margin-left: 10px;
+  &:hover, &:focus {
+    background-color: #fff;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+  }
+  &:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  margin-right: 10px;
+  &:hover {
+    background-color: #fff;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+  }
+}

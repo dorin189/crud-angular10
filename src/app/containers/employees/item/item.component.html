@@ -1,0 +1,13 @@
+<div class="row">
+  <div>
+    <img src="assets/images/user.png" alt="User Image" width="70" class="avatar"/>
+  </div>
+  <div class="userInfo">
+      <h3>{{employee.FullName}}</h3>
+      <p>{{employee.Position}}</p>
+  </div>
+  <div class="action">
+    <button (click)="deleteModal(employee.Id)" class="btn-default btn-delete"><img src="assets/images/delete-user.png"/></button>
+    <button [disabled]="employee.Blocked" [routerLink]="['/employees/edit/' + employee.Id]" class="btn-default btn-edit"><img src="assets/images/edit-user.png" /></button>
+  </div>
+</div>

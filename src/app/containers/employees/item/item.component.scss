@@ -1,0 +1,77 @@
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  div:last-child {
+    margin-left: auto;
+  }
+}
+
+
+.btn-default {
+  border: none;
+  padding: 0 !important;
+  opacity: 1;
+  transition:opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -webkit-transition: opacity 0.5s linear;
+  height: 36px;
+  width: 48px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.3;
+    transition:opacity 2s linear;
+    -moz-transition: opacity 2s linear;
+    -webkit-transition: opacity 2s linear;
+  }
+}
+
+.btn-delete {
+  background: #dc3545;
+  img {
+    height: 22px;
+  }
+}
+
+.btn-edit {
+  background: #cccddd;
+  margin-left: 10px;
+  &:disabled {
+    border: 1px solid #999999;
+    background: #cccccc;
+    color: #666666;
+    cursor: default;
+  }
+  img {
+    height: 24px;
+  }
+}
+
+h3 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.avatar {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+
+  &:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+}
+.userInfo {
+  margin-left: 10px;
+}
+
+.action {
+  margin-top: 14px;
+}

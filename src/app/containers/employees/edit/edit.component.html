@@ -1,0 +1,11 @@
+<h1>Employees Edit</h1>
+
+<hr>
+
+<h4>{{employee.FirstName }} {{employee.SecondName}}</h4>
+<p [innerHTML]="employee.Details"></p>
+<input type="text" [(ngModel)]="employee.Position"/>
+<div class="flex-container">
+  <button [routerLink]="['/employees']" class="btn btn-cancel">Cancel</button>
+  <button (click)="update(employee)" [disabled]="!isChanged" class="btn btn-save">Save</button>
+</div>

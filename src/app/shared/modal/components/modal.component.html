@@ -1,0 +1,15 @@
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{title}}</h5>
+      </div>
+      <div class="modal-body" [innerHTML]="deleteText">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="onDelete()">Delete</button>
+        <button type="button" class="btn btn-cancel" (click)="onCancel()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

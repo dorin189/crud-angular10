@@ -1,0 +1,3 @@
+<h2>Employees List</h2>
+<app-search (searchValue)="keywordHandler($event)"></app-search>
+<app-listing [employees]="employees" [keyword]="keyword" (deleteEmployee)="delete($event)"></app-listing>

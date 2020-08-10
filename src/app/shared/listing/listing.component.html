@@ -1,0 +1,7 @@
+<ng-container *ngFor="let employee of employees | search:keyword">
+  <app-item
+    [employee]="employee"
+    (deleteEmployee)="onDeleteEmployee($event)">
+  </app-item>
+</ng-container>
+
